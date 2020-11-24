@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.Build.NoTargets/2.0.1">
+
+  <PropertyGroup>
+    <PackageId>Resharper.Annotations.Sources</PackageId>
+    <Version>2020.2.0</Version>
+    <Title>Source files of ReSharper annotations</Title>
+    <Description>
+      A source code package of ReSharper annotations that help reduce false positive warnings, explicitly declare purity and nullability in your code, deal with implicit usages of members, support special semantics of APIs in ASP.NET and XAML frameworks and otherwise increase accuracy of ReSharper code inspections.
+
+      The attributes NotNull and Pure are disabled by default, to enable it use NOTNULLATTRIBUTE_ENABLE and PUREATTRIBUTE_ENABLE respectively.
+    </Description>
+    <Authors>Fabrício Godoy</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/skarllot/Resharper.Annotations.Sources</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>source;compiletime;jetbrains;attributes;canbenull;itemnotnull;noenumeration;contractannotation;contract</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <PackageOutputPath>$(SolutionDir)artifacts</PackageOutputPath>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="*.cs" PackagePath="contentFiles\cs\any\" />
+  </ItemGroup>
+
+</Project>
