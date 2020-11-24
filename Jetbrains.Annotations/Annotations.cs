@@ -35,6 +35,10 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 #endif
 
+#if !PUREATTRIBUTE_ENABLE
+using System.Diagnostics.Contracts;
+#endif
+
 // ReSharper disable InheritdocConsiderUsage
 
 #pragma warning disable 1591
