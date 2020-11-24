@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageId>Resharper.Annotations.Sources</PackageId>
-    <Version>2020.2.1</Version>
+    <Version>2020.2.2</Version>
     <Title>Source files of ReSharper annotations</Title>
     <Description>
       A source code package of ReSharper annotations that help reduce false positive warnings, explicitly declare purity and nullability in your code, deal with implicit usages of members, support special semantics of APIs in ASP.NET and XAML frameworks and otherwise increase accuracy of ReSharper code inspections.
